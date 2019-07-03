@@ -1,25 +1,172 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="3" total="4" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="9601" started-at="2019-07-03T13:47:21Z" finished-at="2019-07-03T13:47:31Z">
+  <suite name="Default suite" duration-ms="94245" started-at="2019-07-03T22:54:03Z" finished-at="2019-07-03T22:55:38Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="9601" started-at="2019-07-03T13:47:21Z" finished-at="2019-07-03T13:47:31Z">
-      <class name="eBotTest.FormValidationTest">
-        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:eBotTest.FormValidationTest@649d209a]" name="beforeMethod" is-config="true" duration-ms="7411" started-at="2019-07-03T15:47:21Z" finished-at="2019-07-03T15:47:29Z">
+    <test name="Default test" duration-ms="94245" started-at="2019-07-03T22:54:03Z" finished-at="2019-07-03T22:55:38Z">
+      <class name="test.java.FormValidationTest">
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="beforeMethod" is-config="true" duration-ms="33789" started-at="2019-07-04T00:54:03Z" finished-at="2019-07-04T00:54:37Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- beforeMethod -->
-        <test-method status="PASS" signature="blankDataTest()[pri:0, instance:eBotTest.FormValidationTest@649d209a]" name="blankDataTest" duration-ms="1530" started-at="2019-07-03T15:47:29Z" finished-at="2019-07-03T15:47:30Z">
+        <test-method status="PASS" signature="cleanInputTest()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="cleanInputTest" duration-ms="2954" started-at="2019-07-04T00:54:37Z" finished-at="2019-07-04T00:54:40Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- blankDataTest -->
-        <test-method status="PASS" signature="afterMethod()[pri:0, instance:eBotTest.FormValidationTest@649d209a]" name="afterMethod" is-config="true" duration-ms="642" started-at="2019-07-03T15:47:30Z" finished-at="2019-07-03T15:47:31Z">
+        </test-method> <!-- cleanInputTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="afterMethod" is-config="true" duration-ms="791" started-at="2019-07-04T00:54:40Z" finished-at="2019-07-04T00:54:41Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- afterMethod -->
-      </class> <!-- eBotTest.FormValidationTest -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="beforeMethod" is-config="true" duration-ms="12650" started-at="2019-07-04T00:54:41Z" finished-at="2019-07-04T00:54:54Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="emptyInputTest()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="emptyInputTest" duration-ms="787" started-at="2019-07-04T00:54:54Z" finished-at="2019-07-04T00:54:54Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Author name or Quote text cannot be empty expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Author name or Quote text cannot be empty expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at test.java.FormValidationTest.emptyInputTest(FormValidationTest.java:88)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- emptyInputTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="afterMethod" is-config="true" duration-ms="674" started-at="2019-07-04T00:54:54Z" finished-at="2019-07-04T00:54:55Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="beforeMethod" is-config="true" duration-ms="14957" started-at="2019-07-04T00:54:55Z" finished-at="2019-07-04T00:55:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="quoteMaxLengthTest()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="quoteMaxLengthTest" duration-ms="6908" started-at="2019-07-04T00:55:10Z" finished-at="2019-07-04T00:55:17Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Quote length should be less than 200 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Quote length should be less than 200 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at test.java.FormValidationTest.quoteMaxLengthTest(FormValidationTest.java:178)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quoteMaxLengthTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="afterMethod" is-config="true" duration-ms="742" started-at="2019-07-04T00:55:17Z" finished-at="2019-07-04T00:55:18Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+        <test-method status="PASS" signature="beforeMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="beforeMethod" is-config="true" duration-ms="17510" started-at="2019-07-04T00:55:18Z" finished-at="2019-07-04T00:55:35Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- beforeMethod -->
+        <test-method status="FAIL" signature="quoteMinLengthTest()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="quoteMinLengthTest" duration-ms="1583" started-at="2019-07-04T00:55:35Z" finished-at="2019-07-04T00:55:37Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[Quote length should be more than 8 expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: Quote length should be more than 8 expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:513)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at test.java.FormValidationTest.quoteMinLengthTest(FormValidationTest.java:132)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:86)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:645)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:822)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1130)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
+	at org.testng.TestRunner.privateRun(TestRunner.java:782)
+	at org.testng.TestRunner.run(TestRunner.java:632)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:366)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:361)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:319)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:268)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1244)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1169)
+	at org.testng.TestNG.run(TestNG.java:1064)
+	at org.testng.remote.RemoteTestNG.run(RemoteTestNG.java:113)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:206)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:177)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- quoteMinLengthTest -->
+        <test-method status="PASS" signature="afterMethod()[pri:0, instance:test.java.FormValidationTest@ea4a92b]" name="afterMethod" is-config="true" duration-ms="836" started-at="2019-07-04T00:55:37Z" finished-at="2019-07-04T00:55:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- afterMethod -->
+      </class> <!-- test.java.FormValidationTest -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
